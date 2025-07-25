@@ -43,7 +43,7 @@ export default function Home() {
           { src: "/images/k-drama.png", title: "K-Drama", url: "https://k-dramas-blue.vercel.app" },
           { src: "/images/Funko.png", title: "Funko Collection", url: "https://caids-funko-pops.vercel.app/" },
           { src: "/images/sightline.png", title: "Sightline Windows", url: "https://www.sightlinewindows.co.uk" },
-          { src: "/images/CapeVerde.png", title: "My Cape Verde", url: "https://mycapeverdeproject.org" },
+          { src: "/images/CapeVerde.png", title: "My Cape Verde", url: "https://mycapeverde.org" },
           { src: "/images/waters.png", title: "Waters Construction", url: "https://waters-construction.vercel.app" },
           { src: "/images/fosters.png", title: "Fosters and Sons", url: "https://fosters-sons.vercel.app/" },
         ].map((project, index) => (
