@@ -53,8 +53,8 @@ export default function Home() {
       </section>
 
       {/* Featured Projects Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 bg-gradient-to-br from-green-50 to-emerald-100 py-12 p-6 rounded-lg relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-emerald-200/20 via-transparent to-green-200/20 animate-pulse"></div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 bg-gradient-to-br from-orange-50 to-amber-100 py-12 p-6 rounded-lg relative">
+        <div className="absolute inset-0 bg-gradient-to-r from-orange-200/20 via-transparent to-amber-200/20 animate-pulse"></div>
         {[
           { src: "/images/k-drama.png", title: "K-Drama", url: "https://k-dramas-blue.vercel.app" },
           { src: "/images/Funko.png", title: "Funko Collection", url: "https://caids-funko-pops.vercel.app/" },
@@ -68,7 +68,7 @@ export default function Home() {
             href={project.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="group block bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-2 relative z-10 border border-emerald-200/50"
+            className="group block bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 hover:scale-105 hover:-translate-y-2 relative z-10 border border-orange-200/50"
           >
             <div className="relative overflow-hidden">
               <Image
@@ -79,11 +79,11 @@ export default function Home() {
                 className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <div className="absolute top-2 right-2 w-3 h-3 bg-emerald-400 rounded-full animate-pulse opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute top-2 right-2 w-3 h-3 bg-orange-400 rounded-full animate-pulse opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
             <div className="p-4 relative">
-              <h3 className="text-lg font-semibold text-gray-800 group-hover:text-emerald-600 transition-colors duration-300">{project.title}</h3>
-              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-emerald-400 to-cyan-400 group-hover:w-full transition-all duration-500"></div>
+              <h3 className="text-lg font-semibold text-gray-800 group-hover:text-orange-600 transition-colors duration-300">{project.title}</h3>
+              <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-orange-400 to-amber-400 group-hover:w-full transition-all duration-500"></div>
             </div>
           </a>
         ))}
@@ -99,7 +99,7 @@ export default function Home() {
           <li>Funko Pop Tracker App : Next.js, Tailwind CSS</li>
         </ul>
       </section> */}
-      <section className="py-12 px-6 bg-blue-50" id="data-projects">
+      <section className="py-12 px-6 bg-gradient-to-r from-blue-50 to-cyan-50" id="data-projects">
         <h2 className="text-2xl font-semibold text-blue-900 mb-4">Data Analytics Projects</h2>
         <ul className="list-disc list-inside text-blue-800 space-y-2">
           <li>EV Range vs Charge Speed Dashboard : Google Sheets & Tableau</li>
@@ -109,9 +109,9 @@ export default function Home() {
 
 
       {/* Skills */}
-      <section className="py-12 px-6 bg-gray-50" id="about">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">Skills</h2>
-        <ul className="list-disc list-inside text-gray-700 space-y-2">
+      <section className="py-12 px-6 bg-gradient-to-r from-amber-50 to-yellow-100" id="about">
+        <h2 className="text-2xl font-semibold text-amber-900 mb-4">Skills</h2>
+        <ul className="list-disc list-inside text-amber-800 space-y-2">
           <li>Frontend: HTML, CSS, Tailwind, React, Next.js</li>
           <li>Data Tools: Google Sheets, Tableau, BigQuery</li>
           <li>Version Control: Git & GitHub</li>
@@ -119,13 +119,13 @@ export default function Home() {
       </section>
 
       {/* Contact */}
-      <section className="py-12 px-6 bg-green-50" id="contact">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">Contact</h2>
-        <p className="text-gray-700">
+      <section className="py-12 px-6 bg-gradient-to-r from-orange-100 to-red-100" id="contact">
+        <h2 className="text-2xl font-semibold text-orange-900 mb-4">Contact</h2>
+        <p className="text-orange-800">
           Feel free to reach out at{" "}
           <a
             href="mailto:jamie@example.com"
-            className="text-blue-600 underline hover:text-blue-800 font-medium"
+            className="text-red-600 underline hover:text-orange-600 font-medium transition-colors duration-300"
           >
             jamie@example.com
           </a>
@@ -133,8 +133,9 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-6 bg-gray-900 text-white text-center">
-        <p>&copy; {new Date().getFullYear()} Jamie Cameron. All rights reserved.</p>
+      <footer className="py-6 bg-gradient-to-br from-sky-950 via-sky-900 to-slate-900 text-white text-center relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-transparent to-blue-500/10 animate-pulse"></div>
+        <p className="relative z-10">&copy; {new Date().getFullYear()} Jamie Cameron. All rights reserved.</p>
       </footer>
     </div>
   );
