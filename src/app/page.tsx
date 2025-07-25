@@ -16,20 +16,27 @@ export default function Home() {
       </header> */}
 
       {/* Intro Section */}
-      <section id="home" className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center py-16 px-6 bg-gray-50">
+      <section id="home" className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center py-16 px-6 bg-sky-950">
         <div className="text-center md:text-left">
-          <h2 className="text-5xl font-bold text-gray-900 mb-4">Jamie Cameron</h2>
-          <p className="text-2xl text-gray-600">Web Developer | Designer | Creator</p>
+          <h2 className="text-5xl font-bold text-gray-100 mb-4">Jamie Cameron</h2>
+          <p className="text-xl text-gray-300">Web Developer | Designer | Data Analyst</p>
         </div>
         <div className="flex justify-center">
-          <Image
-            src="/images/portfolio-headshot.jpg"
-            alt="Jamie Cameron"
-            width={300}
-            height={300}
-            className="rounded-xl shadow-lg"
-          />
+          <div className="relative">
+            <Image
+              src="/images/portfolio-headshot.jpg"
+              alt="Jamie Cameron"
+              width={300}
+              height={300}
+              className="rounded-xl shadow-lg"
+            />
+            {/* Multiple ring layers for enhanced glow */}
+            <div className="absolute inset-0 rounded-xl ring-4 ring-cyan-200 blur-sm opacity-95 animate-pulse"></div>
+            <div className="absolute inset-0 rounded-xl ring-8 ring-cyan-100 blur-xl opacity-80 animate-pulse"></div>
+            <div className="absolute inset-0 rounded-xl ring-12 ring-white blur-2xl opacity-60 animate-pulse"></div>
+          </div>
         </div>
+
         <div className="bg-white p-6 rounded-xl shadow-md text-gray-700">
           <p className="text-lg leading-relaxed">
             Welcome to my portfolio! Here you’ll find a collection of my work, skills, and projects that showcase my abilities and creativity. Feel free to explore and reach out if you have any questions or opportunities.
