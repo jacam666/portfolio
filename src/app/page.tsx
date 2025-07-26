@@ -16,22 +16,21 @@ export default function Home() {
       </header> */}
 
       {/* Intro Section */}
-            {/* Intro Section */}
-      <section id="home" className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center py-16 px-6 bg-gradient-to-br from-sky-950 via-sky-900 to-slate-900 relative overflow-hidden">
+      <section id="home" className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center py-16 px-6 bg-gradient-to-br from-sky-950 via-sky-900 to-slate-900 relative overflow-hidden">
         {/* Background animated elements */}
         <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 via-transparent to-blue-500/10 animate-pulse"></div>
-        
+
         <div className="text-center md:text-left relative z-10">
           <h2 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-300 mb-4 animate-pulse">Jamie Cameron</h2>
           <p className="text-xl text-gray-300">Web Developer | Designer | Data Analyst</p>
         </div>
-        
+
         <div className="flex justify-center relative z-10">
           <div className="relative animate-float">
             <Image
               src="/images/portfolio-headshot.jpg"
               alt="Jamie Cameron"
-              width={300}
+              width={350}
               height={300}
               className="rounded-xl shadow-2xl hover:scale-105 transition-transform duration-300"
             />
@@ -46,14 +45,14 @@ export default function Home() {
         </div>
 
         <div className="bg-white/95 backdrop-blur-sm p-6 rounded-xl shadow-xl border border-cyan-200/30 relative z-10 hover:bg-white transition-colors duration-300">
-          <p className="text-lg leading-relaxed text-gray-700">
+          <p className="text-sm leading-relaxed text-gray-700">
             Welcome to my portfolio! Here you'll find a collection of my work, skills, and projects that showcase my abilities and creativity. Feel free to explore and reach out if you have any questions or opportunities.
           </p>
         </div>
       </section>
 
       {/* Featured Projects Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 bg-gradient-to-br from-orange-50 to-amber-100 py-12 p-6 rounded-lg relative">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 bg-gradient-to-br from-orange-50 to-amber-200 py-12 p-6 rounded-lg relative">
         <div className="absolute inset-0 bg-gradient-to-r from-orange-200/20 via-transparent to-amber-200/20 animate-pulse"></div>
         {[
           { src: "/images/k-drama.png", title: "K-Drama", url: "https://k-dramas-blue.vercel.app" },
@@ -89,17 +88,7 @@ export default function Home() {
         ))}
       </div>
 
-
-      {/* Projects List */}
-      {/* <section className="py-12 px-6 bg-white" id="projects">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">Other Projects</h2>
-        <ul className="list-disc list-inside text-gray-700 space-y-2">
-          <li>Data Dashboard: EV Range vs Charge Speed Analysis</li>
-          <li>Gym Attendance Trends : Google Sheets & Looker Studio</li>
-          <li>Funko Pop Tracker App : Next.js, Tailwind CSS</li>
-        </ul>
-      </section> */}
-      <section className="py-12 px-6 bg-gradient-to-r from-blue-50 to-cyan-50" id="data-projects">
+      <section className="py-12 px-6 bg-gradient-to-r from-blue-50 to-cyan-100" id="data-projects">
         <h2 className="text-2xl font-semibold text-blue-900 mb-4">Data Analytics Projects</h2>
         <ul className="list-disc list-inside text-blue-800 space-y-2">
           <li>EV Range vs Charge Speed Dashboard : Google Sheets & Tableau</li>
