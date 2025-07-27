@@ -47,18 +47,12 @@ export default function Home() {
                 I create exceptional digital experiences through clean code, thoughtful design, and data-driven insights.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <div className="flex justify-center lg:justify-start">
                 <a 
                   href="mailto:ja6cam@gmail.com" 
                   className="px-8 py-4 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors duration-300 shadow-lg hover:shadow-xl"
                 >
                   Get In Touch
-                </a>
-                <a 
-                  href="#projects" 
-                  className="px-8 py-4 border-2 border-gray-300 text-gray-700 rounded-lg font-medium hover:border-blue-600 hover:text-blue-600 transition-colors duration-300"
-                >
-                  View My Work
                 </a>
               </div>
             </div>
