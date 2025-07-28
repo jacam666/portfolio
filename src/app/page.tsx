@@ -40,11 +40,11 @@ export default function Home() {
               </h1>
               
               <h2 className="text-2xl lg:text-3xl text-gray-600 mb-8 font-light">
-                Web Developer & Data Analyst
+                Aspiring Data Analyst & Self-Taught Developer
               </h2>
               
               <p className="text-lg text-gray-600 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-                I create exceptional digital experiences through clean code, thoughtful design, and data-driven insights.
+                Self-taught developer with a passion for creating digital experiences. Currently pursuing Google Data Analytics certification to transition into data-driven roles.
               </p>
               
               <div className="flex justify-center lg:justify-start">
@@ -62,7 +62,7 @@ export default function Home() {
               <div className="relative">
                 <div className="w-80 h-80 lg:w-96 lg:h-96 relative">
                   <Image
-                    src="/images/portfolio-headshot.jpg"
+                    src="/images/headshot2.jpg"
                     alt="Jamie Cameron"
                     width={400}
                     height={400}
@@ -83,8 +83,8 @@ export default function Home() {
                   
                   <div className="absolute -right-8 bottom-16 bg-white p-4 rounded-xl shadow-lg border border-gray-100">
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-blue-600">6+</div>
-                      <div className="text-xs text-gray-500">Projects Completed</div>
+                      <div className="text-lg font-bold text-gray-900">Jamie Cameron</div>
+                      <div className="text-xs text-blue-600 font-medium">Data Analytics Student</div>
                     </div>
                   </div>
                 </div>
