@@ -4,19 +4,74 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-100 font-sans">
       {/* Header */}
-      {/* <header className="flex items-center justify-between p-6 bg-white shadow-md sticky top-0 z-50">
-        <h1 className="text-2xl font-bold text-gray-800">Jamie Cameron</h1>
-        <nav>
-          <ul className="flex space-x-6 text-gray-700 font-medium">
-            <li><a href="#home" className="hover:text-blue-600">Home</a></li>
-            <li><a href="#about" className="hover:text-blue-600">About</a></li>
-            <li><a href="#contact" className="hover:text-blue-600">Contact</a></li>
-          </ul>
-        </nav>
-      </header> */}
+      <header className="bg-white/95 backdrop-blur-sm border-b border-gray-100 sticky top-0 z-50 transition-all duration-300">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16">
+            {/* Logo */}
+            <div className="flex-shrink-0">
+              <h1 className="text-xl font-bold text-gray-900">Jamie Cameron</h1>
+            </div>
+            
+            {/* Navigation */}
+            <nav className="hidden md:block">
+              <ul className="flex items-center space-x-8">
+                <li>
+                  <a 
+                    href="#home" 
+                    className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
+                  >
+                    Home
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-full"></span>
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="#data-projects" 
+                    className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
+                  >
+                    Projects
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-full"></span>
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="#about" 
+                    className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
+                  >
+                    Skills
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-full"></span>
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="#contact" 
+                    className="px-6 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-200 transition-all duration-200 shadow-sm hover:shadow-md"
+                    aria-label="Contact Jamie Cameron"
+                  >
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            
+            {/* Mobile menu button */}
+            <div className="md:hidden">
+              <button 
+                type="button" 
+                className="text-gray-700 hover:text-blue-600 focus:outline-none focus:text-blue-600 transition-colors duration-200"
+                aria-label="Open mobile menu"
+              >
+                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
 
       {/* Intro Section */}
-      <section id="home" className="min-h-screen flex items-center justify-center px-8 bg-white relative">
+      <section id="home" className="min-h-screen flex items-center justify-center px-4 sm:px-8 bg-white relative overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-blue-50 opacity-50"></div>
         <div className="absolute inset-0" style={{
@@ -50,7 +105,8 @@ export default function Home() {
               <div className="flex justify-center lg:justify-start">
                 <a 
                   href="mailto:ja6cam@gmail.com" 
-                  className="px-8 py-4 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors duration-300 shadow-lg hover:shadow-xl"
+                  className="px-8 py-4 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-200 transition-all duration-300 shadow-lg hover:shadow-xl"
+                  aria-label="Send email to Jamie Cameron"
                 >
                   Get In Touch
                 </a>
@@ -74,16 +130,16 @@ export default function Home() {
                   <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-indigo-100 rounded-full -z-10"></div>
                   
                   {/* Floating Cards */}
-                  <div className="absolute -left-8 top-8 bg-white p-4 rounded-xl shadow-lg border border-gray-100">
-                    <div className="flex items-center gap-3">
+                  <div className="absolute -left-4 sm:-left-8 top-8 bg-white p-3 sm:p-4 rounded-xl shadow-lg border border-gray-100">
+                    <div className="flex items-center gap-2 sm:gap-3">
                       <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                      <span className="text-sm font-medium text-gray-700">Available for work</span>
+                      <span className="text-xs sm:text-sm font-medium text-gray-700">Available for work</span>
                     </div>
                   </div>
                   
-                  <div className="absolute -right-8 bottom-16 bg-white p-4 rounded-xl shadow-lg border border-gray-100">
+                  <div className="absolute -right-4 sm:-right-8 bottom-16 bg-white p-3 sm:p-4 rounded-xl shadow-lg border border-gray-100">
                     <div className="text-center">
-                      <div className="text-lg font-bold text-gray-900">Jamie Cameron</div>
+                      <div className="text-base sm:text-lg font-bold text-gray-900">Jamie Cameron</div>
                       <div className="text-xs text-blue-600 font-medium">Data Analytics Student</div>
                     </div>
                   </div>
@@ -96,12 +152,14 @@ export default function Home() {
       </section>
 
       {/* Featured Projects Section */}
-      <section className="py-16 px-8 bg-gray-50">
+      <section className="py-16 px-4 sm:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Featured Projects</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">A selection of my recent work showcasing different technologies and design approaches.</p>
           </div>
+
+          
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {[
@@ -111,6 +169,7 @@ export default function Home() {
           { src: "/images/CapeVerde.png", title: "My Cape Verde", url: "https://mycapeverde.org", tech: "WordPress, Custom CSS" },
           { src: "/images/waters.png", title: "Waters Construction", url: "https://waters-construction.vercel.app", tech: "React, Vercel" },
           { src: "/images/fosters.png", title: "Fosters and Sons", url: "https://fosters-sons.vercel.app/", tech: "Next.js, React" },
+          { src: "/images/uksnc.png", title: "UKSNC Supplements", url: "https://snc-supps.vercel.app/", tech: "Next.js, React, Tailwind" },
         ].map((project, index) => (
           <a
             key={index}
@@ -125,7 +184,7 @@ export default function Home() {
                 alt={project.title}
                 width={1200}
                 height={400}
-                className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
@@ -140,7 +199,7 @@ export default function Home() {
       </section>
 
       {/* Data Analytics Section */}
-      <section className="py-16 px-8 bg-white" id="data-projects">
+      <section className="py-16 px-4 sm:px-8 bg-white" id="data-projects">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Data Analytics Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -166,7 +225,7 @@ export default function Home() {
 
 
       {/* Skills Section */}
-      <section className="py-16 px-8 bg-gray-50" id="about">
+      <section className="py-16 px-4 sm:px-8 bg-gray-50" id="about">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Technical Skills</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -208,7 +267,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-16 px-8 bg-white" id="contact">
+      <section className="py-16 px-4 sm:px-8 bg-white" id="contact">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Get In Touch</h2>
           <p className="text-gray-600 mb-8 text-lg">
@@ -216,7 +275,8 @@ export default function Home() {
           </p>
           <a
             href="mailto:ja6cam@gmail.com"
-            className="inline-flex items-center px-8 py-4 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-300 shadow-lg hover:shadow-xl"
+            className="inline-flex items-center px-8 py-4 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-200 transition-all duration-300 shadow-lg hover:shadow-xl"
+            aria-label="Send email to Jamie Cameron"
           >
             Contact Me
           </a>
@@ -225,7 +285,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="py-8 bg-slate-900 text-white text-center">
-        <div className="max-w-4xl mx-auto px-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-8">
           <p className="text-gray-400">&copy; {new Date().getFullYear()} Jamie Cameron. All rights reserved.</p>
         </div>
       </footer>
