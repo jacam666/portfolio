@@ -26,7 +26,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a 
-                    href="#data-projects" 
+                    href="#featured-projects" 
                     className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
                   >
                     Projects
@@ -44,9 +44,9 @@ export default function Home() {
                 </li>
                 <li>
                   <a 
-                    href="#contact" 
+                    href="mailto:ja6cam@gmail.com" 
                     className="px-6 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-200 transition-all duration-200 shadow-sm hover:shadow-md"
-                    aria-label="Contact Jamie Cameron"
+                    aria-label="Send email to Jamie Cameron"
                   >
                     Contact
                   </a>
@@ -95,7 +95,7 @@ export default function Home() {
               </h1>
               
               <h2 className="text-2xl lg:text-3xl text-gray-600 mb-8 font-light">
-                Aspiring Data Analyst & Self-Taught Developer
+                Aspiring Tech Guy & Self-Taught Developer
               </h2>
               
               <p className="text-lg text-gray-600 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
@@ -152,7 +152,7 @@ export default function Home() {
       </section>
 
       {/* Featured Projects Section */}
-      <section className="py-16 px-4 sm:px-8 bg-gray-50">
+      <section className="py-16 px-4 sm:px-8 bg-gray-50" id="featured-projects">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Featured Projects</h2>
@@ -163,13 +163,15 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {[
-          { src: "/images/k-drama.png", title: "K-Drama", url: "https://k-dramas-blue.vercel.app", tech: "React, Next.js" },
-          { src: "/images/Funko.png", title: "Funko Collection", url: "https://caids-funko-pops.vercel.app/", tech: "Next.js, Tailwind" },
+          { src: "/images/k-drama.png", title: "K-Drama project for my daughter", url: "https://k-dramas-blue.vercel.app", tech: "React, Next.js" },
+          
           { src: "/images/sightline.png", title: "Sightline Windows", url: "https://www.sightlinewindows.co.uk", tech: "HTML, CSS, JavaScript" },
-          { src: "/images/CapeVerde.png", title: "My Cape Verde", url: "https://mycapeverde.org", tech: "WordPress, Custom CSS" },
+          { src: "/images/CapeVerde.png", title: "Charity Project", url: "https://mycapeverde.org", tech: "React, Custom CSS" },
           { src: "/images/waters.png", title: "Waters Construction", url: "https://waters-construction.vercel.app", tech: "React, Vercel" },
           { src: "/images/fosters.png", title: "Fosters and Sons", url: "https://fosters-sons.vercel.app/", tech: "Next.js, React" },
           { src: "/images/uksnc.png", title: "UKSNC Supplements", url: "https://snc-supps.vercel.app/", tech: "Next.js, React, Tailwind" },
+          { src: "/images/Funko.png", title: "Funko Collection project for my daughter", url: "https://caids-funko-pops.vercel.app/", tech: "Next.js, Tailwind" },
+          { src: "/images/rehab-image.png", title: "Exercise rehab project for my sister", url: "https://pens-rehab-exercises.vercel.app/", tech: "Next.js, Tailwind" },
         ].map((project, index) => (
           <a
             key={index}
@@ -198,37 +200,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Data Analytics Section */}
-      <section className="py-16 px-4 sm:px-8 bg-white" id="data-projects">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Data Analytics Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-blue-50 p-6 rounded-xl border border-blue-100">
-              <h3 className="text-xl font-semibold text-blue-900 mb-3">EV Range Analysis</h3>
-              <p className="text-blue-800 mb-4">Comprehensive dashboard analyzing electric vehicle range vs charge speed relationships using Google Sheets and Tableau.</p>
-              <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Google Sheets</span>
-                <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Tableau</span>
-              </div>
-            </div>
-            <div className="bg-indigo-50 p-6 rounded-xl border border-indigo-100">
-              <h3 className="text-xl font-semibold text-indigo-900 mb-3">Gym Attendance Trends</h3>
-              <p className="text-indigo-800 mb-4">Visual analysis of gym attendance patterns and trends using advanced data visualization techniques.</p>
-              <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">Tableau</span>
-                <span className="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-sm">Data Visualization</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
 
       {/* Skills Section */}
       <section className="py-16 px-4 sm:px-8 bg-gray-50" id="about">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">Technical Skills</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="text-center">
               <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <div className="w-8 h-8 bg-blue-600 rounded"></div>
@@ -240,7 +217,7 @@ export default function Home() {
                 <li>Tailwind CSS</li>
               </ul>
             </div>
-            <div className="text-center">
+            {/* <div className="text-center">
               <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <div className="w-8 h-8 bg-green-600 rounded"></div>
               </div>
@@ -250,7 +227,7 @@ export default function Home() {
                 <li>Tableau</li>
                 <li>BigQuery</li>
               </ul>
-            </div>
+            </div> */}
             <div className="text-center">
               <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <div className="w-8 h-8 bg-purple-600 rounded"></div>
