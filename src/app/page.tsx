@@ -243,9 +243,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Featured Projects</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">A selection of my recent work showcasing different technologies and design approaches.</p>
           </div>
-
-          
-          
+{/* https://coles-portfoilio.vercel.app/ */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {[
           { src: "/images/k-drama.png", title: "K-Drama project for my daughter", url: "https://k-dramas-blue.vercel.app", tech: "React, Next.js" },
@@ -257,6 +255,7 @@ export default function Home() {
           // { src: "/images/uksnc.png", title: "UKSNC Supplements", url: "https://snc-supps.vercel.app/", tech: "Next.js, React, Tailwind" },
           { src: "/images/Funko.png", title: "Funko Collection project for my daughter", url: "https://caids-funko-pops.vercel.app/", tech: "Next.js, Tailwind" },
           { src: "/images/rehab-image.png", title: "Exercise rehab project", url: "https://pens-rehab-exercises.vercel.app/", tech: "Next.js, Tailwind" },
+          { src: "/images/Coles-portfolio.png", title: "Daughters Portfolio", url: "https://coles-portfoilio.vercel.app/", tech: "Next.js, React, Tailwind" },
         ].map((project, index) => (
           <a
             key={index}
