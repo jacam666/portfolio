@@ -192,7 +192,7 @@ export default function Home() {
           { src: "/images/fosters.png", title: "Fosters and Sons", url: "https://fosters-sons.vercel.app/", tech: "Next.js, React" },
           // { src: "/images/uksnc.png", title: "UKSNC Supplements", url: "https://snc-supps.vercel.app/", tech: "Next.js, React, Tailwind" },
           { src: "/images/Funko.png", title: "Funko Collection project for my daughter", url: "https://caids-funko-pops.vercel.app/", tech: "Next.js, Tailwind" },
-          { src: "/images/rehab-image.png", title: "Exercise rehab project for my sister", url: "https://pens-rehab-exercises.vercel.app/", tech: "Next.js, Tailwind" },
+          { src: "/images/rehab-image.png", title: "Exercise rehab project", url: "https://pens-rehab-exercises.vercel.app/", tech: "Next.js, Tailwind" },
         ].map((project, index) => (
           <a
             key={index}
