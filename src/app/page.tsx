@@ -169,7 +169,7 @@ export default function Home() {
           { src: "/images/CapeVerde.png", title: "Charity Project", url: "https://mycapeverde.org", tech: "React, Custom CSS" },
           { src: "/images/waters.png", title: "Waters Construction", url: "https://waters-construction.vercel.app", tech: "React, Vercel" },
           { src: "/images/fosters.png", title: "Fosters and Sons", url: "https://fosters-sons.vercel.app/", tech: "Next.js, React" },
-          { src: "/images/uksnc.png", title: "UKSNC Supplements", url: "https://snc-supps.vercel.app/", tech: "Next.js, React, Tailwind" },
+          // { src: "/images/uksnc.png", title: "UKSNC Supplements", url: "https://snc-supps.vercel.app/", tech: "Next.js, React, Tailwind" },
           { src: "/images/Funko.png", title: "Funko Collection project for my daughter", url: "https://caids-funko-pops.vercel.app/", tech: "Next.js, Tailwind" },
           { src: "/images/rehab-image.png", title: "Exercise rehab project for my sister", url: "https://pens-rehab-exercises.vercel.app/", tech: "Next.js, Tailwind" },
         ].map((project, index) => (
@@ -248,7 +248,7 @@ export default function Home() {
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Get In Touch</h2>
           <p className="text-gray-600 mb-8 text-lg">
-            I'm always interested in new opportunities and collaborations. Let's discuss how we can work together.
+            I'm always interested in new opportunities. Let's discuss how we can work together.
           </p>
           <a
             href="mailto:ja6cam@gmail.com"
