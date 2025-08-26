@@ -246,14 +246,14 @@ export default function Home() {
 {/* https://coles-portfoilio.vercel.app/ */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {[
-          { src: "/images/k-drama.png", title: "K-Drama project for my daughter", url: "https://k-dramas-blue.vercel.app", tech: "React, Next.js" },
+          { src: "/images/k-drama-2.png", title: "K-Drama project for my daughter", url: "https://k-dramas-blue.vercel.app", tech: "React, Next.js" },
           
-          { src: "/images/sightline.png", title: "Sightline Windows", url: "https://www.sightlinewindows.co.uk", tech: "HTML, CSS, JavaScript" },
-          { src: "/images/CapeVerde.png", title: "Charity Project", url: "https://mycapeverde.org", tech: "React, Custom CSS" },
-          { src: "/images/waters.png", title: "Waters Construction", url: "https://waters-construction.vercel.app", tech: "React, Vercel" },
-          { src: "/images/fosters.png", title: "Fosters and Sons", url: "https://fosters-sons.vercel.app/", tech: "Next.js, React" },
+          { src: "/images/sightline-2.png", title: "Sightline Windows", url: "https://www.sightlinewindows.co.uk", tech: "HTML, CSS, JavaScript" },
+          { src: "/images/CapeVerde-2.png", title: "Charity Project", url: "https://mycapeverde.org", tech: "React, Custom CSS" },
+          { src: "/images/waters-3.png", title: "Construction Company Website", url: "https://waters-construction.vercel.app", tech: "React, Vercel" },
+          { src: "/images/fosters-2.png", title: "Fosters and Sons", url: "https://fosters-sons.vercel.app/", tech: "Next.js, React" },
           // { src: "/images/uksnc.png", title: "UKSNC Supplements", url: "https://snc-supps.vercel.app/", tech: "Next.js, React, Tailwind" },
-          { src: "/images/Funko.png", title: "Funko Collection project for my daughter", url: "https://caids-funko-pops.vercel.app/", tech: "Next.js, Tailwind" },
+          { src: "/images/Funko-4.png", title: "Funko Collection project for my daughter", url: "https://caids-funko-pops.vercel.app/", tech: "Next.js, Tailwind" },
           { src: "/images/rehab-image.png", title: "Exercise rehab project", url: "https://pens-rehab-exercises.vercel.app/", tech: "Next.js, Tailwind" },
           { src: "/images/Coles-portfolio.png", title: "Daughters Portfolio", url: "https://coles-portfoilio.vercel.app/", tech: "Next.js, React, Tailwind" },
         ].map((project, index) => (
