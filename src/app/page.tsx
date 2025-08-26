@@ -161,7 +161,7 @@ export default function Home() {
                   <div className="absolute -right-4 sm:-right-8 bottom-16 bg-white p-3 sm:p-4 rounded-xl shadow-lg border border-gray-100">
                     <div className="text-center">
                       <div className="text-base sm:text-lg font-bold text-gray-900">Jamie Cameron</div>
-                      <div className="text-xs text-blue-600 font-medium">Data Analytics Student</div>
+                      <div className="text-xs text-blue-600 font-medium">Data Analytics/ Developer Student</div>
                     </div>
                   </div>
                 </div>
