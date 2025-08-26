@@ -1,6 +1,15 @@
+"use client"
+
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Home() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <div className="min-h-screen bg-gray-100 font-sans">
       {/* Header */}
@@ -44,7 +53,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a 
-                    href="/cv/Jamie-Cameron-CV.pdf" 
+                    href="/Jamie-Cameron-CV.pdf" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
@@ -70,15 +79,70 @@ export default function Home() {
             <div className="md:hidden">
               <button 
                 type="button" 
+                onClick={toggleMobileMenu}
                 className="text-gray-700 hover:text-blue-600 focus:outline-none focus:text-blue-600 transition-colors duration-200"
-                aria-label="Open mobile menu"
+                aria-label="Toggle mobile menu"
+                aria-expanded={isMobileMenuOpen}
               >
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
+                {isMobileMenuOpen ? (
+                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                ) : (
+                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                )}
               </button>
             </div>
           </div>
+          
+          {/* Mobile Navigation Menu */}
+          {isMobileMenuOpen && (
+            <div className="md:hidden border-t border-gray-100 bg-white/95 backdrop-blur-sm">
+              <div className="px-4 py-3 space-y-3">
+                <a 
+                  href="#home" 
+                  onClick={toggleMobileMenu}
+                  className="block text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
+                >
+                  Home
+                </a>
+                <a 
+                  href="#featured-projects" 
+                  onClick={toggleMobileMenu}
+                  className="block text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
+                >
+                  Projects
+                </a>
+                <a 
+                  href="#about" 
+                  onClick={toggleMobileMenu}
+                  className="block text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
+                >
+                  Skills
+                </a>
+                <a 
+                  href="/Jamie-Cameron-CV.pdf" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={toggleMobileMenu}
+                  className="block text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
+                  aria-label="Download Jamie Cameron's CV"
+                >
+                  Download CV
+                </a>
+                <a 
+                  href="mailto:ja6cam@gmail.com" 
+                  onClick={toggleMobileMenu}
+                  className="block w-full text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-200 transition-all duration-200 mt-4"
+                  aria-label="Send email to Jamie Cameron"
+                >
+                  Contact Me
+                </a>
+              </div>
+            </div>
+          )}
         </div>
       </header>
 
