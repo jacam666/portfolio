@@ -123,7 +123,7 @@ export default function Home() {
                   Get In Touch
                 </a>
                 <a 
-                  href="/cv/Jamie-Cameron-CV.pdf" 
+                  href="/Jamie-Cameron-CV.pdf" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-lg font-medium hover:bg-blue-600 hover:text-white focus:outline-none focus:ring-4 focus:ring-blue-200 transition-all duration-300 shadow-lg hover:shadow-xl"
