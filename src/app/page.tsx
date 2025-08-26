@@ -44,6 +44,18 @@ export default function Home() {
                 </li>
                 <li>
                   <a 
+                    href="/cv/Jamie-Cameron-CV.pdf" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
+                    aria-label="Download Jamie Cameron's CV"
+                  >
+                    CV
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-full"></span>
+                  </a>
+                </li>
+                <li>
+                  <a 
                     href="mailto:ja6cam@gmail.com" 
                     className="px-6 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-200 transition-all duration-200 shadow-sm hover:shadow-md"
                     aria-label="Send email to Jamie Cameron"
@@ -102,13 +114,22 @@ export default function Home() {
                 Self-taught developer with a passion for creating digital experiences. Currently pursuing Google Data Analytics certification to transition into data-driven roles.
               </p>
               
-              <div className="flex justify-center lg:justify-start">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <a 
                   href="mailto:ja6cam@gmail.com" 
                   className="px-8 py-4 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-200 transition-all duration-300 shadow-lg hover:shadow-xl"
                   aria-label="Send email to Jamie Cameron"
                 >
                   Get In Touch
+                </a>
+                <a 
+                  href="/cv/Jamie-Cameron-CV.pdf" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-lg font-medium hover:bg-blue-600 hover:text-white focus:outline-none focus:ring-4 focus:ring-blue-200 transition-all duration-300 shadow-lg hover:shadow-xl"
+                  aria-label="Download Jamie Cameron's CV"
+                >
+                  Download CV
                 </a>
               </div>
             </div>
