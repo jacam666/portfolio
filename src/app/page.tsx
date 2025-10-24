@@ -246,8 +246,8 @@ export default function Home() {
 {/* https://coles-portfoilio.vercel.app/ */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {[
+          { src: "/images/coaching-website.png", title: "Coaching Website", url: "https://jc-coach.com", tech: "React, Next.js, Tailwind" },
           { src: "/images/k-drama-2.png", title: "K-Drama project for my daughter", url: "https://k-dramas-blue.vercel.app", tech: "React, Next.js" },
-          
           { src: "/images/sightline-2.png", title: "Sightline Windows", url: "https://www.sightlinewindows.co.uk", tech: "HTML, CSS, JavaScript" },
           { src: "/images/CapeVerde-2.png", title: "Charity Project", url: "https://mycapeverde.org", tech: "React, Custom CSS" },
           { src: "/images/waters-3.png", title: "Construction Company Website", url: "https://waters-construction.vercel.app", tech: "React, Vercel" },
