@@ -20,13 +20,13 @@ export default function Home() {
             <div className="flex-shrink-0">
               <h1 className="text-xl font-bold text-gray-900">Jamie Cameron</h1>
             </div>
-            
+
             {/* Navigation */}
             <nav className="hidden md:block">
               <ul className="flex items-center space-x-8">
                 <li>
-                  <a 
-                    href="#home" 
+                  <a
+                    href="#home"
                     className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
                   >
                     Home
@@ -34,8 +34,8 @@ export default function Home() {
                   </a>
                 </li>
                 <li>
-                  <a 
-                    href="#featured-projects" 
+                  <a
+                    href="#featured-projects"
                     className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
                   >
                     Projects
@@ -43,8 +43,8 @@ export default function Home() {
                   </a>
                 </li>
                 <li>
-                  <a 
-                    href="#about" 
+                  <a
+                    href="#about"
                     className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
                   >
                     Skills
@@ -52,8 +52,8 @@ export default function Home() {
                   </a>
                 </li>
                 <li>
-                  <a 
-                    href="/Jamie-Cameron-CV.pdf" 
+                  <a
+                    href="/Jamie-Cameron-CV.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
@@ -64,8 +64,8 @@ export default function Home() {
                   </a>
                 </li>
                 <li>
-                  <a 
-                    href="mailto:ja6cam@gmail.com" 
+                  <a
+                    href="mailto:ja6cam@gmail.com"
                     className="px-6 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-200 transition-all duration-200 shadow-sm hover:shadow-md"
                     aria-label="Send email to Jamie Cameron"
                   >
@@ -74,11 +74,11 @@ export default function Home() {
                 </li>
               </ul>
             </nav>
-            
+
             {/* Mobile menu button */}
             <div className="md:hidden">
-              <button 
-                type="button" 
+              <button
+                type="button"
                 onClick={toggleMobileMenu}
                 className="text-gray-700 hover:text-blue-600 focus:outline-none focus:text-blue-600 transition-colors duration-200"
                 aria-label="Toggle mobile menu"
@@ -96,34 +96,34 @@ export default function Home() {
               </button>
             </div>
           </div>
-          
+
           {/* Mobile Navigation Menu */}
           {isMobileMenuOpen && (
             <div className="md:hidden border-t border-gray-100 bg-white/95 backdrop-blur-sm">
               <div className="px-4 py-3 space-y-3">
-                <a 
-                  href="#home" 
+                <a
+                  href="#home"
                   onClick={toggleMobileMenu}
                   className="block text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
                 >
                   Home
                 </a>
-                <a 
-                  href="#featured-projects" 
+                <a
+                  href="#featured-projects"
                   onClick={toggleMobileMenu}
                   className="block text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
                 >
                   Projects
                 </a>
-                <a 
-                  href="#about" 
+                <a
+                  href="#about"
                   onClick={toggleMobileMenu}
                   className="block text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
                 >
                   Skills
                 </a>
-                <a 
-                  href="/Jamie-Cameron-CV.pdf" 
+                <a
+                  href="/Jamie-Cameron-CV.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={toggleMobileMenu}
@@ -132,8 +132,8 @@ export default function Home() {
                 >
                   Download CV
                 </a>
-                <a 
-                  href="mailto:ja6cam@gmail.com" 
+                <a
+                  href="mailto:ja6cam@gmail.com"
                   onClick={toggleMobileMenu}
                   className="block w-full text-center px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-200 transition-all duration-200 mt-4"
                   aria-label="Send email to Jamie Cameron"
@@ -152,12 +152,12 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-blue-50 opacity-50"></div>
         <div className="absolute inset-0" style={{
           backgroundImage: `radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
-                           radial-gradient(circle at 75% 75%, rgba(99, 102, 241, 0.1) 0%, transparent 50%)`
+                          radial-gradient(circle at 75% 75%, rgba(99, 102, 241, 0.1) 0%, transparent 50%)`
         }}></div>
-        
+
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="flex flex-col lg:flex-row items-center gap-16">
-            
+
             {/* Left Content */}
             <div className="flex-1 text-center lg:text-left">
               <div className="mb-6">
@@ -165,29 +165,29 @@ export default function Home() {
                   Available for new opportunities
                 </span>
               </div>
-              
+
               <h1 className="text-5xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
                 Hi, I'm <span className="text-blue-600">Jamie</span>
               </h1>
-              
+
               <h2 className="text-2xl lg:text-3xl text-gray-600 mb-8 font-light">
                 Aspiring Tech Guy & Self-Taught Developer
               </h2>
-              
+
               <p className="text-lg text-gray-600 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
                 Self-taught developer with a passion for creating digital experiences. Currently pursuing Google Data Analytics certification to transition into data-driven roles.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <a 
-                  href="mailto:ja6cam@gmail.com" 
+                <a
+                  href="mailto:ja6cam@gmail.com"
                   className="px-8 py-4 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-200 transition-all duration-300 shadow-lg hover:shadow-xl"
                   aria-label="Send email to Jamie Cameron"
                 >
                   Get In Touch
                 </a>
-                <a 
-                  href="/Jamie-Cameron-CV.pdf" 
+                <a
+                  href="/Jamie-Cameron-CV.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-lg font-medium hover:bg-blue-600 hover:text-white focus:outline-none focus:ring-4 focus:ring-blue-200 transition-all duration-300 shadow-lg hover:shadow-xl"
@@ -197,7 +197,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            
+
             {/* Right Content - Profile Image */}
             <div className="flex-1 flex justify-center lg:justify-end">
               <div className="relative">
@@ -209,11 +209,11 @@ export default function Home() {
                     height={400}
                     className="w-full h-full object-cover rounded-3xl shadow-2xl"
                   />
-                  
+
                   {/* Decorative Elements */}
                   <div className="absolute -top-4 -right-4 w-24 h-24 bg-blue-100 rounded-full -z-10"></div>
                   <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-indigo-100 rounded-full -z-10"></div>
-                  
+
                   {/* Floating Cards */}
                   <div className="absolute -left-4 sm:-left-8 top-8 bg-white p-3 sm:p-4 rounded-xl shadow-lg border border-gray-100">
                     <div className="flex items-center gap-2 sm:gap-3">
@@ -221,7 +221,7 @@ export default function Home() {
                       <span className="text-xs sm:text-sm font-medium text-gray-700">Available for work</span>
                     </div>
                   </div>
-                  
+
                   <div className="absolute -right-4 sm:-right-8 bottom-16 bg-white p-3 sm:p-4 rounded-xl shadow-lg border border-gray-100">
                     <div className="text-center">
                       <div className="text-base sm:text-lg font-bold text-gray-900">Jamie Cameron</div>
@@ -231,7 +231,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            
+
           </div>
         </div>
       </section>
@@ -243,43 +243,44 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Featured Projects</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">A selection of my recent work showcasing different technologies and design approaches.</p>
           </div>
-{/* https://coles-portfoilio.vercel.app/ */}
+          {/* https://coles-portfoilio.vercel.app/ */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {[
-          { src: "/images/coaching-website.png", title: "Coaching Website", url: "https://jc-coach.com", tech: "React, Next.js, Tailwind" },
-          { src: "/images/k-drama-2.png", title: "K-Drama project for my daughter", url: "https://k-dramas-blue.vercel.app", tech: "React, Next.js" },
-          { src: "/images/sightline-2.png", title: "Sightline Windows", url: "https://www.sightlinewindows.co.uk", tech: "HTML, CSS, JavaScript" },
-          { src: "/images/CapeVerde-2.png", title: "Charity Project", url: "https://mycapeverde.org", tech: "React, Custom CSS" },
-          { src: "/images/waters-3.png", title: "Construction Company Website", url: "https://waters-construction.vercel.app", tech: "React, Vercel" },
-          { src: "/images/fosters-2.png", title: "Fosters and Sons", url: "https://fosters-sons.vercel.app/", tech: "Next.js, React" },
-          // { src: "/images/uksnc.png", title: "UKSNC Supplements", url: "https://snc-supps.vercel.app/", tech: "Next.js, React, Tailwind" },
-          { src: "/images/funko-4.png", title: "Funko Collection project for my daughter", url: "https://caids-funko-pops.vercel.app/", tech: "Next.js, Tailwind" },
-          { src: "/images/rehab-image.png", title: "Exercise rehab project", url: "https://pens-rehab-exercises.vercel.app/", tech: "Next.js, Tailwind" },
-          { src: "/images/Coles-portfolio.png", title: "Daughters Portfolio", url: "https://coles-portfoilio.vercel.app/", tech: "Next.js, React, Tailwind" },
-        ].map((project, index) => (
-          <a
-            key={index}
-            href={project.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group block bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-200"
-          >
-            <div className="relative overflow-hidden">
-              <Image
-                src={project.src}
-                alt={project.title}
-                width={1200}
-                height={400}
-                className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-300">{project.title}</h3>
-              <p className="text-sm text-gray-500 font-medium">{project.tech}</p>
-            </div>
-          </a>
-        ))}
+            {[
+              { src: "/images/coaching-website.png", title: "Coaching Website", url: "https://jc-coach.com", tech: "React, Next.js, Tailwind" },
+              { src: "/images/k-drama-2.png", title: "K-Drama project for my daughter", url: "https://k-dramas-blue.vercel.app", tech: "React, Next.js" },
+              { src: "/images/sightline-2.png", title: "Sightline Windows", url: "https://www.sightlinewindows.co.uk", tech: "HTML, CSS, JavaScript" },
+              { src: "/images/CapeVerde-2.png", title: "Charity Project", url: "https://mycapeverde.org", tech: "React, Custom CSS" },
+              { src: "/images/waters-3.png", title: "Construction Company Website", url: "https://waters-construction.vercel.app", tech: "React, Vercel" },
+              { src: "/images/fosters-2.png", title: "Fosters and Sons", url: "https://fosters-sons.vercel.app/", tech: "Next.js, React" },
+              // { src: "/images/uksnc.png", title: "UKSNC Supplements", url: "https://snc-supps.vercel.app/", tech: "Next.js, React, Tailwind" },
+              { src: "/images/funko-4.png", title: "Funko Collection project for my daughter", url: "https://caids-funko-pops.vercel.app/", tech: "Next.js, Tailwind" },
+              { src: "/images/rehab-image.png", title: "Exercise rehab project", url: "https://pens-rehab-exercises.vercel.app/", tech: "Next.js, Tailwind" },
+              { src: "/images/Coles-portfolio.png", title: "Daughters Portfolio", url: "https://coles-portfoilio.vercel.app/", tech: "Next.js, React, Tailwind" },
+              { src: "/images/serena-image.png", title: "Client Fitness Site", url: "https://serena-fitness-five.vercel.app/", tech: "Next.js, React, Tailwind" },
+            ].map((project, index) => (
+              <a
+                key={index}
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-200"
+              >
+                <div className="relative overflow-hidden">
+                  <Image
+                    src={project.src}
+                    alt={project.title}
+                    width={1200}
+                    height={400}
+                    className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-300">{project.title}</h3>
+                  <p className="text-sm text-gray-500 font-medium">{project.tech}</p>
+                </div>
+              </a>
+            ))}
           </div>
         </div>
       </section>
