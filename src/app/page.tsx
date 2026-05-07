@@ -11,7 +11,7 @@ const projects = [
     tech: "Azure Data Factory, SQL, Power BI",
     label: "GitHub Repo",
   },
-  { src: "/images/coaching-website.png", title: "Coaching Website", url: "https://jc-coach.com", tech: "React, Next.js, Tailwind", label: "Live Site" },
+  { src: "/images/coaching-homepage.png", title: "Coaching Website", url: "https://jc-coach.com", tech: "React, Next.js, Tailwind", label: "Live Site" },
   { src: "/images/k-drama-2.png", title: "K-Drama project for my daughter", url: "https://k-dramas-blue.vercel.app", tech: "React, Next.js", label: "Live Site" },
   { src: "/images/sightline-2.png", title: "Sightline Windows", url: "https://www.sightlinewindows.co.uk", tech: "HTML, CSS, JavaScript", label: "Live Site" },
   { src: "/images/azure-notes.png", title: "Data Engineering Notes", url: "https://azure-engineering-notes.vercel.app/", tech: "Next.js, React, Tailwind", label: "Live Site" },
