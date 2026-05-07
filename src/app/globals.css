@@ -1,48 +1,63 @@
 @import "tailwindcss";
 
-/* Smooth scrolling */
+:root {
+  --background: #f8fafc;
+  --surface: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --accent: #0891b2;
+  --accent-strong: #0e7490;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: var(--font-body), system-ui, -apple-system, sans-serif;
+  background: radial-gradient(circle at top right, #dbeafe 0%, transparent 30%),
+    radial-gradient(circle at bottom left, #cffafe 0%, transparent 28%),
+    var(--background);
+  color: var(--text);
 }
 
-/* Custom animations */
-/* @keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display), system-ui, -apple-system, sans-serif;
 }
 
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-} */
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
+::selection {
+  background: #a5f3fc;
+  color: #082f49;
 }
 
-/* Custom gradient text animation */
-@keyframes gradient-shift {
+@keyframes fade-up {
   0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
+    opacity: 0;
+    transform: translateY(18px);
   }
   100% {
-    background-position: 0% 50%;
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-.gradient-text-animate {
-  background: linear-gradient(-45deg, #06b6d4, #3b82f6, #8b5cf6, #06b6d4);
-  background-size: 400% 400%;
-  animation: gradient-shift 3s ease infinite;
+.animate-fade-up {
+  animation: fade-up 0.7s ease-out both;
+}
+
+.surface-grid {
+  background-image: linear-gradient(rgba(14, 116, 144, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(14, 116, 144, 0.05) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up {
+    animation: none;
+  }
 }
