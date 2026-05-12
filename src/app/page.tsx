@@ -6,9 +6,9 @@ import { useState } from "react";
 const projects = [
   {
     src: "/images/DataFlow.png",
-    title: "Energy Analytics Pipeline",
+    title: "Azure Data Engineering Pipeline",
     url: "https://github.com/jacam666/energy-analytics-pipeline",
-    tech: "Azure Data Factory, SQL, Power BI",
+    tech: "Azure Data Factory, Synapse, SQL, Power BI",
     label: "GitHub Repo",
   },
   { src: "/images/coaching-homepage.png", title: "Coaching Website", url: "https://jc-coach.com", tech: "React, Next.js, Tailwind", label: "Live Site" },
@@ -196,12 +196,11 @@ export default function Home() {
               </h1>
 
               <h2 className="text-2xl lg:text-3xl text-slate-600 mb-8 font-light">
-                Hi, I&apos;m Jamie. I&apos;m focused on building practical data platforms and analytics workflows.
+                Hi, I&apos;m Jamie. I&apos;m focused on building scalable data pipelines, transformation workflows, and cloud-first data platforms.
               </h2>
 
               <p className="text-lg text-slate-600 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-                I&apos;m currently learning Azure Data Engineering, working on data pipelines, transformation workflows, and cloud-first data solutions while continuing to ship real-world projects.
-              </p>
+                I&apos;m building hands-on Azure data engineering projects using Blob Storage, Data Factory, Synapse Serverless, SQL, Python, and Power BI.              </p>
 
               <div className="mb-10 grid grid-cols-3 gap-3 max-w-xl mx-auto lg:mx-0">
                 <div className="rounded-xl bg-white/80 border border-cyan-100 p-3">
@@ -265,7 +264,7 @@ export default function Home() {
                   <div className="absolute -right-4 sm:-right-8 bottom-16 bg-white p-3 sm:p-4 rounded-xl shadow-lg border border-cyan-100">
                     <div className="text-center">
                       <div className="text-base sm:text-lg font-bold text-slate-900">Jamie Cameron</div>
-                      <div className="text-xs text-cyan-700 font-medium">Data Analytics + Developer Student</div>
+                      <div className="text-xs text-cyan-700 font-medium">Aspiring Azure Data Engineer</div>
                     </div>
                   </div>
                 </div>
@@ -281,7 +280,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-slate-900 mb-4 tracking-tight">Featured Projects</h2>
-            <p className="text-slate-600 max-w-2xl mx-auto">A selection of recent work with a practical, user-focused approach to design and frontend build quality.</p>
+            <p className="text-slate-600 max-w-2xl mx-auto">A selection of data engineering and web development projects, focused on practical cloud workflows, clean design, and real-world problem solving.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -354,9 +353,9 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold text-slate-900 mb-3">Data Engineering</h3>
               <ul className="text-slate-600 space-y-2">
-                <li>Microsoft Azure</li>
-                <li>Data Factory</li>
-                <li>SQL</li>
+                <li>Azure Data Factory</li>
+                <li>Azure Synapse (Serverless SQL)</li>
+                <li>SQL (OPENROWSET, Views)</li>
                 <li>Power BI</li>
               </ul>
             </div>
