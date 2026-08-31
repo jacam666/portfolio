@@ -244,7 +244,7 @@ export default function Home() {
               <div className="relative">
                 <div className="w-80 h-80 lg:w-96 lg:h-96 relative">
                   <Image
-                    src="/images/headshot2.jpg"
+                    src="/images/portfollio-headshot.png"
                     alt="Jamie Cameron"
                     width={400}
                     height={400}
