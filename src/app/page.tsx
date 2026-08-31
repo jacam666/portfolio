@@ -4,25 +4,25 @@ import Image from "next/image";
 import { useState } from "react";
 
 const projects = [
-  {
-    src: "/images/DataFlow.png",
-    title: "Azure Data Engineering Pipeline",
-    url: "https://github.com/jacam666/energy-analytics-pipeline",
-    tech: "Azure Data Factory, Synapse, SQL, Power BI",
-    label: "GitHub Repo",
-  },
+  // {
+  //   src: "/images/DataFlow.png",
+  //   title: "Azure Data Engineering Pipeline",
+  //   url: "https://github.com/jacam666/energy-analytics-pipeline",
+  //   tech: "Azure Data Factory, Synapse, SQL, Power BI",
+  //   label: "GitHub Repo",
+  // },
+  { src: "/images/playground-pantry.png", title: "Playground Pantry — School Catering Website", url: "https://www.playground-pantry.com/", tech: "Next.js, React, Tailwind", label: "Live Site" },
   { src: "/images/coaching-homepage.png", title: "Coaching Website", url: "https://jc-coach.com", tech: "React, Next.js, Tailwind", label: "Live Site" },
-  { src: "/images/playground-pantry.png", title: "School Catering Company", url: "https://www.playground-pantry.com/", tech: "Next.js, React, Tailwind", label: "Live Site" },
   { src: "/images/sightline-2.png", title: "Sightline Windows", url: "https://www.sightlinewindows.co.uk", tech: "HTML, CSS, JavaScript", label: "Live Site" },
-  { src: "/images/azure-notes.png", title: "Data Engineering Notes", url: "https://azure-engineering-notes.vercel.app/", tech: "Next.js, React, Tailwind", label: "Live Site" },
+  // { src: "/images/azure-notes.png", title: "Frontend Notes & Experiments", url: "https://azure-engineering-notes.vercel.app/", tech: "Next.js, React, Tailwind", label: "Live Site" },
   { src: "/images/waters-3.png", title: "Construction Company Website", url: "https://waters-construction.vercel.app", tech: "React, Vercel", label: "Live Site" },
   { src: "/images/fosters-2.png", title: "Fosters and Sons", url: "https://fosters-sons.vercel.app/", tech: "Next.js, React", label: "Live Site" },
-  { src: "/images/funko-4.png", title: "Funko Collection project for my daughter", url: "https://caids-funko-pops.vercel.app/", tech: "Next.js, Tailwind", label: "Live Site" },
+  // { src: "/images/funko-4.png", title: "Funko Collection project for my daughter", url: "https://caids-funko-pops.vercel.app/", tech: "Next.js, Tailwind", label: "Live Site" },
   { src: "/images/rehab-image.png", title: "Exercise rehab project", url: "https://pens-rehab-exercises.vercel.app/", tech: "Next.js, Tailwind", label: "Live Site" },
-  { src: "/images/Coles-portfolio.png", title: "Daughters Portfolio", url: "https://coles-portfoilio.vercel.app/", tech: "Next.js, React, Tailwind", label: "Live Site" },
+  { src: "/images/Coles-portfolio.png", title: "Mathematics Student Portfolio", url: "https://coles-portfoilio.vercel.app/", tech: "Next.js, React, Tailwind", label: "Live Site" },
   { src: "/images/serena-image.png", title: "Client Fitness Site", url: "https://serena-fitness-five.vercel.app/", tech: "Next.js, React, Tailwind", label: "Live Site" },
   { src: "/images/CapeVerde-2.png", title: "Charity Project", url: "https://mycapeverde.org", tech: "React, Custom CSS", label: "Live Site" },
-  { src: "/images/k-drama-2.png", title: "K-Drama project for my daughter", url: "https://k-dramas-blue.vercel.app", tech: "React, Next.js", label: "Live Site" },
+  // { src: "/images/k-drama-2.png", title: "K-Drama project for my daughter", url: "https://k-dramas-blue.vercel.app", tech: "React, Next.js", label: "Live Site" },
 
 
 ];
@@ -80,7 +80,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    href="/Jamie-Cameron-CV.pdf"
+                    href="/Jamie-Cameron-Frontend-Developer-CV.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-slate-700 hover:text-cyan-700 font-medium transition-colors duration-200 relative group"
@@ -150,7 +150,7 @@ export default function Home() {
                   Skills
                 </a>
                 <a
-                  href="/Jamie-Cameron-CV.pdf"
+                  href="/Jamie-Cameron-Frontend-Developer-CV.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={toggleMobileMenu}
@@ -194,28 +194,29 @@ export default function Home() {
               </div>
 
               <h1 className="text-5xl lg:text-7xl font-bold text-slate-900 mb-6 leading-tight tracking-tight">
-                Aspiring <span className="text-cyan-700">Azure Data Engineer</span>
+                Frontend <span className="text-cyan-700">Developer</span>
               </h1>
 
               <h2 className="text-2xl lg:text-3xl text-slate-600 mb-8 font-light">
-                Hi, I&apos;m Jamie. I&apos;m focused on building scalable data pipelines, transformation workflows, and cloud-first data platforms.
+                Hi, I&apos;m Jamie. I build fast, responsive and accessible websites for schools, local businesses and growing brands.
               </h2>
 
               <p className="text-lg text-slate-600 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-                I&apos;m building hands-on Azure data engineering projects using Blob Storage, Data Factory, Synapse Serverless, SQL, Python, and Power BI.              </p>
+                From initial design through to deployment, I create polished websites using React, Next.js, TypeScript and Tailwind CSS.
+              </p>
 
               <div className="mb-10 grid grid-cols-3 gap-3 max-w-xl mx-auto lg:mx-0">
                 <div className="rounded-xl bg-white/80 border border-cyan-100 p-3">
-                  <p className="text-2xl font-bold text-slate-900">11+</p>
-                  <p className="text-xs text-slate-600">Projects Live</p>
+                  <p className="text-2xl font-bold text-slate-900">{projects.length}</p>
+                  <p className="text-xs text-slate-600">Live Projects</p>
                 </div>
                 <div className="rounded-xl bg-white/80 border border-cyan-100 p-3">
-                  <p className="text-2xl font-bold text-slate-900">3+</p>
-                  <p className="text-xs text-slate-600">Core Stacks</p>
+                  <p className="text-2xl font-bold text-slate-900">Mobile-first</p>
+                  <p className="text-xs text-slate-600">Responsive Design</p>
                 </div>
                 <div className="rounded-xl bg-white/80 border border-cyan-100 p-3">
-                  <p className="text-2xl font-bold text-slate-900">2026</p>
-                  <p className="text-xs text-slate-600">Open to Work</p>
+                  <p className="text-2xl font-bold text-slate-900">Design → Live</p>
+                  <p className="text-xs text-slate-600">Complete Delivery</p>
                 </div>
               </div>
 
@@ -228,7 +229,7 @@ export default function Home() {
                   Get In Touch
                 </a>
                 <a
-                  href="/Jamie-Cameron-CV.pdf"
+                  href="/Jamie-Cameron-Frontend-Developer-CV.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-8 py-4 border-2 border-cyan-700 text-cyan-700 rounded-lg font-medium hover:bg-cyan-700 hover:text-white focus:outline-none focus:ring-4 focus:ring-cyan-200 transition-all duration-300 shadow-lg hover:shadow-xl"
@@ -266,7 +267,7 @@ export default function Home() {
                   <div className="absolute -right-4 sm:-right-8 bottom-16 bg-white p-3 sm:p-4 rounded-xl shadow-lg border border-cyan-100">
                     <div className="text-center">
                       <div className="text-base sm:text-lg font-bold text-slate-900">Jamie Cameron</div>
-                      <div className="text-xs text-cyan-700 font-medium">Aspiring Azure Data Engineer</div>
+                      <div className="text-xs text-cyan-700 font-medium">Frontend Developer</div>
                     </div>
                   </div>
                 </div>
@@ -282,7 +283,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-slate-900 mb-4 tracking-tight">Featured Projects</h2>
-            <p className="text-slate-600 max-w-2xl mx-auto">A selection of data engineering and web development projects, focused on practical cloud workflows, clean design, and real-world problem solving.</p>
+            <p className="text-slate-600 max-w-2xl mx-auto">A selection of frontend and web development projects focused on clean design, responsive experiences, and practical problem solving.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -346,6 +347,7 @@ export default function Home() {
               <ul className="text-slate-600 space-y-2">
                 <li>HTML, CSS, JavaScript</li>
                 <li>React, Next.js</li>
+                <li>TypeScript</li>
                 <li>Tailwind CSS</li>
               </ul>
             </div>
@@ -353,23 +355,24 @@ export default function Home() {
               <div className="bg-cyan-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <div className="w-8 h-8 bg-cyan-700 rounded"></div>
               </div>
-              <h3 className="text-xl font-semibold text-slate-900 mb-3">Data Engineering</h3>
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">UX & Quality</h3>
               <ul className="text-slate-600 space-y-2">
-                <li>Azure Data Factory</li>
-                <li>Azure Synapse (Serverless SQL)</li>
-                <li>SQL (OPENROWSET, Views)</li>
-                <li>Power BI</li>
+                <li>Responsive Design</li>
+                <li>Accessibility</li>
+                <li>Performance and SEO</li>
+                <li>Mobile-first UI</li>
               </ul>
             </div>
             <div className="text-center bg-slate-50 rounded-2xl p-8 border border-slate-100">
               <div className="bg-sky-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <div className="w-8 h-8 bg-sky-700 rounded"></div>
               </div>
-              <h3 className="text-xl font-semibold text-slate-900 mb-3">Development Tools</h3>
+              <h3 className="text-xl font-semibold text-slate-900 mb-3">Tools & Development</h3>
               <ul className="text-slate-600 space-y-2">
                 <li>Git & GitHub</li>
-                <li>VS Code</li>
                 <li>Vercel</li>
+                <li>API Integration</li>
+                <li>Environment Variables</li>
               </ul>
             </div>
           </div>
