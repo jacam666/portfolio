@@ -80,7 +80,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    href="/Jamie-Cameron-Frontend-Developer-CV.pdf"
+                    href="/Jamie-Cameron-Frontend-Developer-CV-1.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-slate-700 hover:text-cyan-700 font-medium transition-colors duration-200 relative group"
