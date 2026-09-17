@@ -13,7 +13,7 @@ const projects = [
   // },
   { src: "/images/playground-pantry.png", title: "Playground Pantry — School Catering Website", url: "https://www.playground-pantry.com/", tech: "Next.js, React, Tailwind", label: "Live Site" },
   { src: "/images/coaching-homepage.png", title: "Coaching Website", url: "https://jc-coach.com", tech: "React, Next.js, Tailwind", label: "Live Site" },
-  { src: "/images/sightline-2.png", title: "Sightline Windows", url: "https://www.sightlinewindows.co.uk", tech: "HTML, CSS, JavaScript", label: "Live Site" },
+  // { src: "/images/sightline-2.png", title: "Sightline Windows", url: "https://www.sightlinewindows.co.uk", tech: "HTML, CSS, JavaScript", label: "Live Site" },
   // { src: "/images/azure-notes.png", title: "Frontend Notes & Experiments", url: "https://azure-engineering-notes.vercel.app/", tech: "Next.js, React, Tailwind", label: "Live Site" },
   { src: "/images/waters-3.png", title: "Construction Company Website", url: "https://waters-construction.vercel.app", tech: "React, Vercel", label: "Live Site" },
   { src: "/images/fosters-2.png", title: "Fosters and Sons", url: "https://fosters-sons.vercel.app/", tech: "Next.js, React", label: "Live Site" },
@@ -21,7 +21,7 @@ const projects = [
   { src: "/images/rehab-image.png", title: "Exercise rehab project", url: "https://pens-rehab-exercises.vercel.app/", tech: "Next.js, Tailwind", label: "Live Site" },
   { src: "/images/Coles-portfolio.png", title: "Mathematics Student Portfolio", url: "https://coles-portfoilio.vercel.app/", tech: "Next.js, React, Tailwind", label: "Live Site" },
   { src: "/images/serena-image.png", title: "Client Fitness Site", url: "https://serena-fitness-five.vercel.app/", tech: "Next.js, React, Tailwind", label: "Live Site" },
-  { src: "/images/CapeVerde-2.png", title: "Charity Project", url: "https://mycapeverde.org", tech: "React, Custom CSS", label: "Live Site" },
+  // { src: "/images/CapeVerde-2.png", title: "Charity Project", url: "https://mycapeverde.org", tech: "React, Custom CSS", label: "Live Site" },
   // { src: "/images/k-drama-2.png", title: "K-Drama project for my daughter", url: "https://k-dramas-blue.vercel.app", tech: "React, Next.js", label: "Live Site" },
 
 
