@@ -4,13 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 
 const projects = [
-  // {
-  //   src: "/images/DataFlow.png",
-  //   title: "Azure Data Engineering Pipeline",
-  //   url: "https://github.com/jacam666/energy-analytics-pipeline",
-  //   tech: "Azure Data Factory, Synapse, SQL, Power BI",
-  //   label: "GitHub Repo",
-  // },
+  
   { src: "/images/playground-pantry.png", title: "Playground Pantry — School Catering Website", url: "https://www.playground-pantry.com/", tech: "Next.js, React, Tailwind", label: "Live Site" },
   { src: "/images/coaching-homepage.png", title: "Coaching Website", url: "https://jc-coach.com", tech: "React, Next.js, Tailwind", label: "Live Site" },
   // { src: "/images/sightline-2.png", title: "Sightline Windows", url: "https://www.sightlinewindows.co.uk", tech: "HTML, CSS, JavaScript", label: "Live Site" },
@@ -22,9 +16,14 @@ const projects = [
   { src: "/images/Coles-portfolio.png", title: "Mathematics Student Portfolio", url: "https://coles-portfoilio.vercel.app/", tech: "Next.js, React, Tailwind", label: "Live Site" },
   { src: "/images/serena-image.png", title: "Client Fitness Site", url: "https://serena-fitness-five.vercel.app/", tech: "Next.js, React, Tailwind", label: "Live Site" },
   // { src: "/images/CapeVerde-2.png", title: "Charity Project", url: "https://mycapeverde.org", tech: "React, Custom CSS", label: "Live Site" },
-  // { src: "/images/k-drama-2.png", title: "K-Drama project for my daughter", url: "https://k-dramas-blue.vercel.app", tech: "React, Next.js", label: "Live Site" },
-
-
+  { src: "/images/k-drama-2.png", title: "K-Drama project for my daughter", url: "https://k-dramas-blue.vercel.app", tech: "React, Next.js", label: "Live Site" },
+  {
+    src: "/images/DataFlow.png",
+    title: "Azure Data Engineering Pipeline",
+    url: "https://github.com/jacam666/energy-analytics-pipeline",
+    tech: "Azure Data Factory, Synapse, SQL, Power BI",
+    label: "GitHub Repo",
+  }
 ];
 
 export default function Home() {
