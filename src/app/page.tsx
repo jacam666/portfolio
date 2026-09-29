@@ -4,7 +4,13 @@ import Image from "next/image";
 import { useState } from "react";
 
 const projects = [
-  
+  {
+  src: "/images/capstone-project.png",
+  title: "Cyber Security Capstone — Two-Office Network",
+  url: "/projects/cyber-security-capstone",
+  tech: "Cisco Packet Tracer, Networking, Wireless Security",
+  label: "View Project"
+},
   { src: "/images/playground-pantry-image-2.png", title: "Playground Pantry — School Catering Website", url: "https://www.playground-pantry.com/", tech: "Next.js, React, Tailwind", label: "Live Site" },
   { src: "/images/coaching-web-image-2.png", title: "Coaching Website", url: "https://jc-coach.com", tech: "React, Next.js, Tailwind", label: "Live Site" },
   { src: "/images/leedon-homepage.png", title: "Leedon Lower School - Website Updates", url: "https://leedonlowerschool.co.uk", tech: "Juniper CMS, Content Management", label: "Live Site" },
