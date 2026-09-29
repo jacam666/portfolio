@@ -86,7 +86,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    href="/Jamie-Cameron-cyber-security-CV-updated.pdf"
+                    href="/Jamie-Cameron-cyber-security-CV.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-slate-700 hover:text-cyan-700 font-medium transition-colors duration-200 relative group"
@@ -156,7 +156,7 @@ export default function Home() {
                   Skills
                 </a>
                 <a
-                  href="/Jamie-Cameron-cyber-security-CV-updated.pdf"
+                  href="/Jamie-Cameron-cyber-security-CV.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={toggleMobileMenu}
@@ -235,7 +235,7 @@ export default function Home() {
                   Get In Touch
                 </a>
                 <a
-                  href="/Jamie-Cameron-cyber-security-CV-updated.pdf"
+                  href="/Jamie-Cameron-cyber-security-CV.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-8 py-4 border-2 border-cyan-700 text-cyan-700 rounded-lg font-medium hover:bg-cyan-700 hover:text-white focus:outline-none focus:ring-4 focus:ring-cyan-200 transition-all duration-300 shadow-lg hover:shadow-xl"
