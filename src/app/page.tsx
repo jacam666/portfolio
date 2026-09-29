@@ -5,8 +5,9 @@ import { useState } from "react";
 
 const projects = [
   
-  { src: "/images/playground-pantry.png", title: "Playground Pantry — School Catering Website", url: "https://www.playground-pantry.com/", tech: "Next.js, React, Tailwind", label: "Live Site" },
-  { src: "/images/coaching-homepage.png", title: "Coaching Website", url: "https://jc-coach.com", tech: "React, Next.js, Tailwind", label: "Live Site" },
+  { src: "/images/playground-pantry-image-2.png", title: "Playground Pantry — School Catering Website", url: "https://www.playground-pantry.com/", tech: "Next.js, React, Tailwind", label: "Live Site" },
+  { src: "/images/coaching-web-image-2.png", title: "Coaching Website", url: "https://jc-coach.com", tech: "React, Next.js, Tailwind", label: "Live Site" },
+  { src: "/images/leedon-homepage.png", title: "Leedon Lower School - Website Updates", url: "https://leedonlowerschool.co.uk", tech: "Juniper CMS, Content Management", label: "Live Site" },
   // { src: "/images/sightline-2.png", title: "Sightline Windows", url: "https://www.sightlinewindows.co.uk", tech: "HTML, CSS, JavaScript", label: "Live Site" },
   // { src: "/images/azure-notes.png", title: "Frontend Notes & Experiments", url: "https://azure-engineering-notes.vercel.app/", tech: "Next.js, React, Tailwind", label: "Live Site" },
   { src: "/images/waters-3.png", title: "Construction Company Website", url: "https://waters-construction.vercel.app", tech: "React, Vercel", label: "Live Site" },
