@@ -5,32 +5,33 @@ import { useState } from "react";
 
 const projects = [
   {
-  src: "/images/capstone-project.png",
-  title: "Cyber Security Capstone — Two-Office Network",
-  url: "/projects/cyber-security-capstone",
-  tech: "Cisco Packet Tracer, Networking, Wireless Security",
-  label: "View Project"
-},
-  { src: "/images/playground-pantry-image-2.png", title: "Playground Pantry — School Catering Website", url: "https://www.playground-pantry.com/", tech: "Next.js, React, Tailwind", label: "Live Site" },
-  { src: "/images/coaching-web-image-2.png", title: "Coaching Website", url: "https://jc-coach.com", tech: "React, Next.js, Tailwind", label: "Live Site" },
-  { src: "/images/leedon-homepage.png", title: "Leedon Lower School - Website Updates", url: "https://leedonlowerschool.co.uk", tech: "Juniper CMS, Content Management", label: "Live Site" },
-  // { src: "/images/sightline-2.png", title: "Sightline Windows", url: "https://www.sightlinewindows.co.uk", tech: "HTML, CSS, JavaScript", label: "Live Site" },
-  // { src: "/images/azure-notes.png", title: "Frontend Notes & Experiments", url: "https://azure-engineering-notes.vercel.app/", tech: "Next.js, React, Tailwind", label: "Live Site" },
-  { src: "/images/waters-3.png", title: "Construction Company Website", url: "https://waters-construction.vercel.app", tech: "React, Vercel", label: "Live Site" },
-  { src: "/images/fosters-2.png", title: "Fosters and Sons", url: "https://fosters-sons.vercel.app/", tech: "Next.js, React", label: "Live Site" },
-  // { src: "/images/funko-4.png", title: "Funko Collection project for my daughter", url: "https://caids-funko-pops.vercel.app/", tech: "Next.js, Tailwind", label: "Live Site" },
-  { src: "/images/rehab-image.png", title: "Exercise rehab project", url: "https://pens-rehab-exercises.vercel.app/", tech: "Next.js, Tailwind", label: "Live Site" },
-  { src: "/images/Coles-portfolio.png", title: "Mathematics Student Portfolio", url: "https://coles-portfoilio.vercel.app/", tech: "Next.js, React, Tailwind", label: "Live Site" },
-  { src: "/images/serena-image.png", title: "Client Fitness Site", url: "https://serena-fitness-five.vercel.app/", tech: "Next.js, React, Tailwind", label: "Live Site" },
-  // { src: "/images/CapeVerde-2.png", title: "Charity Project", url: "https://mycapeverde.org", tech: "React, Custom CSS", label: "Live Site" },
-  { src: "/images/k-drama-2.png", title: "K-Drama project for my daughter", url: "https://k-dramas-blue.vercel.app", tech: "React, Next.js", label: "Live Site" },
+    src: "/images/capstone-image-v2.png",
+    title: "Cyber Security Capstone — Two-Office Network",
+    url: "/projects/cyber-security-capstone",
+    tech: "Cisco Packet Tracer, Networking, Wireless Security",
+    label: "View Project"
+  },
+  { src: "/images/brightfuture-image.png", title: "Bright Future College — Two-Office Network Design", url: "/projects/bright-future-college", tech: "Cisco Packet Tracer, IP Addressing, Routing & Switching", label: "View Project" },
   {
     src: "/images/DataFlow.png",
     title: "Azure Data Engineering Pipeline",
     url: "https://github.com/jacam666/energy-analytics-pipeline",
     tech: "Azure Data Factory, Synapse, SQL, Power BI",
     label: "GitHub Repo",
-  }
+  },
+  { src: "/images/playground-pantry-image-2.png", title: "Playground Pantry — School Catering Website", url: "https://www.playground-pantry.com/", tech: "Next.js, React, Tailwind", label: "Live Site" },
+  { src: "/images/coaching-web-image-2.png", title: "Coaching Website", url: "https://jc-coach.com", tech: "React, Next.js, Tailwind", label: "Live Site" },
+  { src: "/images/leedon-homepage.png", title: "Leedon Lower School - Website Updates", url: "https://leedonlowerschool.co.uk", tech: "Juniper CMS, Content Management", label: "Live Site" },
+  // { src: "/images/sightline-2.png", title: "Sightline Windows", url: "https://www.sightlinewindows.co.uk", tech: "HTML, CSS, JavaScript", label: "Live Site" },
+  // { src: "/images/azure-notes.png", title: "Frontend Notes & Experiments", url: "https://azure-engineering-notes.vercel.app/", tech: "Next.js, React, Tailwind", label: "Live Site" },
+  // { src: "/images/waters-3.png", title: "Construction Company Website", url: "https://waters-construction.vercel.app", tech: "React, Vercel", label: "Live Site" },
+  // { src: "/images/fosters-2.png", title: "Fosters and Sons", url: "https://fosters-sons.vercel.app/", tech: "Next.js, React", label: "Live Site" },
+  // { src: "/images/funko-4.png", title: "Funko Collection project for my daughter", url: "https://caids-funko-pops.vercel.app/", tech: "Next.js, Tailwind", label: "Live Site" },
+  { src: "/images/rehab-image.png", title: "Exercise rehab project", url: "https://pens-rehab-exercises.vercel.app/", tech: "Next.js, Tailwind", label: "Live Site" },
+  { src: "/images/Coles-portfolio.png", title: "Mathematics Student Portfolio", url: "https://coles-portfoilio.vercel.app/", tech: "Next.js, React, Tailwind", label: "Live Site" },
+  { src: "/images/serena-image.png", title: "Client Fitness Site", url: "https://serena-fitness-five.vercel.app/", tech: "Next.js, React, Tailwind", label: "Live Site" },
+  // { src: "/images/CapeVerde-2.png", title: "Charity Project", url: "https://mycapeverde.org", tech: "React, Custom CSS", label: "Live Site" },
+  // { src: "/images/k-drama-2.png", title: "K-Drama project for my daughter", url: "https://k-dramas-blue.vercel.app", tech: "React, Next.js", label: "Live Site" },
 ];
 
 export default function Home() {
@@ -42,7 +43,7 @@ export default function Home() {
   };
 
   const visibleProjects = showAllProjects ? projects : projects.slice(0, 6);
-  const cvUrl = "/Jamie-Cameron-Cyber-Security-CV.pdf";
+  const cvUrl = "/Jamie-Cameron-Cyber-Security-CV-v3.pdf";
 
   return (
     <div className="min-h-screen text-slate-900">
@@ -87,7 +88,7 @@ export default function Home() {
                 </li>
                 <li>
                   <a
-                    href="/Jamie-Cameron-Cyber-Security-CV.pdf"
+                    href="/Jamie-Cameron-Cyber-Security-CV-v3.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-slate-700 hover:text-cyan-700 font-medium transition-colors duration-200 relative group"
@@ -157,7 +158,7 @@ export default function Home() {
                   Skills
                 </a>
                 <a
-                  href="/Jamie-Cameron-Cyber-Security-CV.pdf"
+                  href="/Jamie-Cameron-Cyber-Security-CV-v3.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={toggleMobileMenu}
@@ -201,29 +202,29 @@ export default function Home() {
               </div>
 
               <h1 className="text-5xl lg:text-7xl font-bold text-slate-900 mb-6 leading-tight tracking-tight">
-                Frontend <span className="text-cyan-700">Developer</span>
+                Aspiring <span className="text-cyan-700">Cyber Security Professional</span>
               </h1>
 
               <h2 className="text-2xl lg:text-3xl text-slate-600 mb-8 font-light">
-                Hi, I&apos;m Jamie. I build fast, responsive and accessible websites for schools, local businesses and growing brands.
+                Hi, I&apos;m Jamie. I&apos;m building practical cyber security skills through the LEEP Group Cyber Security Essentials Bootcamp.
               </h2>
 
               <p className="text-lg text-slate-600 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-                From initial design through to deployment, I create polished websites using React, Next.js, TypeScript and Tailwind CSS.
+                My current work includes network design in Cisco Packet Tracer and cloud security coursework. I bring additional experience building and maintaining websites with React and Next.js.
               </p>
 
               <div className="mb-10 grid grid-cols-3 gap-3 max-w-xl mx-auto lg:mx-0">
                 <div className="rounded-xl bg-white/80 border border-cyan-100 p-3">
-                  <p className="text-2xl font-bold text-slate-900">{projects.length}</p>
-                  <p className="text-xs text-slate-600">Live Projects</p>
+                  <p className="text-2xl font-bold text-slate-900">Bootcamp</p>
+                  <p className="text-xs text-slate-600">LEEP Group in progress</p>
                 </div>
                 <div className="rounded-xl bg-white/80 border border-cyan-100 p-3">
-                  <p className="text-2xl font-bold text-slate-900">Mobile-first</p>
-                  <p className="text-xs text-slate-600">Responsive Design</p>
+                  <p className="text-2xl font-bold text-slate-900">Networking</p>
+                  <p className="text-xs text-slate-600">Cisco Packet Tracer</p>
                 </div>
                 <div className="rounded-xl bg-white/80 border border-cyan-100 p-3">
-                  <p className="text-2xl font-bold text-slate-900">Design → Live</p>
-                  <p className="text-xs text-slate-600">Complete Delivery</p>
+                  <p className="text-2xl font-bold text-slate-900">Cloud Security</p>
+                  <p className="text-xs text-slate-600">Coursework in progress</p>
                 </div>
               </div>
 
@@ -236,7 +237,7 @@ export default function Home() {
                   Get In Touch
                 </a>
                 <a
-                  href="/Jamie-Cameron-Cyber-Security-CV.pdf"
+                  href="/Jamie-Cameron-Cyber-Security-CV-v3.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-8 py-4 border-2 border-cyan-700 text-cyan-700 rounded-lg font-medium hover:bg-cyan-700 hover:text-white focus:outline-none focus:ring-4 focus:ring-cyan-200 transition-all duration-300 shadow-lg hover:shadow-xl"
@@ -274,7 +275,7 @@ export default function Home() {
                   <div className="absolute -right-4 sm:-right-8 bottom-16 bg-white p-3 sm:p-4 rounded-xl shadow-lg border border-cyan-100">
                     <div className="text-center">
                       <div className="text-base sm:text-lg font-bold text-slate-900">Jamie Cameron</div>
-                      <div className="text-xs text-cyan-700 font-medium">Frontend Developer</div>
+                      <div className="text-xs text-cyan-700 font-medium">Cyber Security Stuudent</div>
                     </div>
                   </div>
                 </div>
@@ -290,7 +291,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-slate-900 mb-4 tracking-tight">Featured Projects</h2>
-            <p className="text-slate-600 max-w-2xl mx-auto">A selection of frontend and web development projects focused on clean design, responsive experiences, and practical problem solving.</p>
+            <p className="text-slate-600 max-w-2xl mx-auto">
+              Cyber security and networking coursework, followed by selected web and cloud projects that show my broader technical experience.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -341,7 +344,7 @@ export default function Home() {
       </section>
 
 
-      {/* Skills Section */}
+      {/* Skills Section
       <section className="py-20 px-4 sm:px-8 bg-white" id="about">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl font-bold text-slate-900 mb-12 text-center tracking-tight">Technical Skills</h2>
@@ -384,7 +387,89 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+      {/* Skills Section */}
+<section className="py-20 px-4 sm:px-8 bg-white" id="about">
+  <div className="max-w-6xl mx-auto">
+    <div className="text-center mb-12">
+      <p className="text-sm font-semibold uppercase tracking-widest text-cyan-700">
+        Skills & learning
+      </p>
+      <h2 className="mt-3 text-4xl font-bold text-slate-900 tracking-tight">
+        Technical Skills
+      </h2>
+    </div>
+
+    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4">
+      <div className="bg-slate-50 rounded-2xl p-7 border border-slate-200">
+        <div className="bg-cyan-100 w-14 h-14 rounded-full flex items-center justify-center mb-5">
+          <div className="w-7 h-7 bg-cyan-700 rounded" />
+        </div>
+        <h3 className="text-xl font-semibold text-slate-900 mb-4">
+          Networking & Security
+        </h3>
+        <ul className="text-slate-600 space-y-2">
+          <li>Cisco Packet Tracer</li>
+          <li>IP addressing and subnetting</li>
+          <li>Routing, switching and VLANs</li>
+          <li>DHCP and wireless security</li>
+          <li>Firewall and access-control concepts</li>
+        </ul>
+      </div>
+
+      <div className="bg-slate-50 rounded-2xl p-7 border border-slate-200">
+        <div className="bg-cyan-100 w-14 h-14 rounded-full flex items-center justify-center mb-5">
+          <div className="w-7 h-7 border-4 border-cyan-700 rounded-full" />
+        </div>
+        <h3 className="text-xl font-semibold text-slate-900 mb-4">
+          Security Tools & Cloud
+        </h3>
+        <ul className="text-slate-600 space-y-2">
+          <li>Wireshark packet-capture basics</li>
+          <li>Connectivity testing and troubleshooting</li>
+          <li>SSH device management</li>
+          <li>Azure Firewall and network security groups</li>
+          <li>Entra ID and Intune concepts — coursework</li>
+        </ul>
+      </div>
+
+      <div className="bg-slate-50 rounded-2xl p-7 border border-slate-200">
+        <div className="bg-cyan-100 w-14 h-14 rounded-full flex items-center justify-center mb-5">
+          <div className="w-7 h-7 bg-cyan-700 rounded-sm rotate-45" />
+        </div>
+        <h3 className="text-xl font-semibold text-slate-900 mb-4">
+          Web Development
+        </h3>
+        <ul className="text-slate-600 space-y-2">
+          <li>HTML, CSS and JavaScript</li>
+          <li>React and Next.js</li>
+          <li>TypeScript and Tailwind CSS</li>
+          <li>Responsive design and accessibility</li>
+          <li>GitHub and Vercel</li>
+        </ul>
+      </div>
+
+      <div className="bg-slate-50 rounded-2xl p-7 border border-slate-200">
+        <div className="bg-sky-100 w-14 h-14 rounded-full flex items-center justify-center mb-5">
+          <div className="w-7 h-7 border-4 border-sky-700 rounded" />
+        </div>
+        <h3 className="text-xl font-semibold text-slate-900 mb-4">
+          Data & Cloud Technologies
+        </h3>
+        <ul className="text-slate-600 space-y-2">
+          <li>Azure Data Factory</li>
+          <li>Azure Synapse Analytics</li>
+          <li>SQL</li>
+          <li>Power BI</li>
+          <li>API integration and environment variables</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
       {/* Contact Section */}
       <section className="py-20 px-4 sm:px-8 bg-slate-900 text-white" id="contact">
